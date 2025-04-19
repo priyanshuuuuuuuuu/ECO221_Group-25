@@ -1,0 +1,14 @@
+We generated detailed summary statistics for the sugarcane dataset, which combines crop production and input use data with rainfall and soil salinity information across 266 districts in India for the year 2017.
+
+On average, sugarcane production was 180.98 thousand tonnes per district, ranging from a minimum of 0.01 to a maximum of 2,326.51 thousand tonnes. The average cultivated area under sugarcane was 22.70 thousand hectares, with values ranging from 0.00 to 257.45. Due to inconsistencies in the raw data where irrigated area exceeded total cultivated area, we capped the irrigated area to match total area. After this adjustment, the average capped irrigated area was 16.29 thousand hectares, and a small positive constant (+1) was added to this for modeling purposes, giving an adjusted irrigated area mean of 17.29. The average unirrigated area was 6.42 thousand hectares.
+
+In terms of input usage, average nitrogen consumption was 54,249.70 tonnes per district, with phosphate and potash averaging 21,347.95 and 7,634.82 tonnes respectively. These inputs display wide variation, indicating differences in fertilizer practices across regions.
+
+Environmental inputs also show considerable diversity. The average annual rainfall across sugarcane districts was 911.66 mm, with a standard deviation of 692.38 mm and a maximum of 4,520.24 mm. However, rainfall data was missing for 48 out of the 266 districts. Soil salinity data will be discussed in the next section.
+
+In summary, the dataset reflects significant heterogeneity in both production and environmental conditions across sugarcane-growing districts, which is essential for understanding the variation in crop output and input response.
+
+
+
+
+“While merging environmental and agronomic data, some variables (such as rainfall and salinity) were unavailable for certain districts. We observed that 48 out of 266 sugarcane-growing districts had missing rainfall data, and 49 districts lacked salinity information. This missingness may not be completely random and could affect model estimates if it correlates with unobserved district characteristics. We acknowledge this as a limitation and treat the final model results with this context in mind.”
